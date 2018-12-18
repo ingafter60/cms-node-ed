@@ -6,13 +6,9 @@ router.all('*', (req, res, next) => {
 	next();
 });
 
+//http://localhost:4500/admin/posts
 router.get('/', (req, res) => {
-  res.render('admin/index');
-});
-
-
-router.get('/dashboard', (req, res) => {
-  res.render('admin/dashboard');
+  res.send('IT WORKS!');
 });
 
 
